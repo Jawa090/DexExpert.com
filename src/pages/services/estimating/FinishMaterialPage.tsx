@@ -3,12 +3,12 @@ import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { CheckCircle } from 'lucide-react';
 
-const MEPTakeoffsPage = () => {
+const FinishMaterialPage = () => {
   return (
     <>
       <Helmet>
-        <title>MEP Quantity Takeoff Services | DexExperts</title>
-        <meta name="description" content="Professional MEP quantity takeoff services including mechanical, electrical, plumbing systems analysis and complete building services calculations." />
+        <title>Finish Material Takeoff Services | DexExperts</title>
+        <meta name="description" content="Professional finish material takeoff services including interior finishes, exterior materials, and complete building finish analysis." />
       </Helmet>
 
       {/* Hero Section */}
@@ -21,7 +21,7 @@ const MEPTakeoffsPage = () => {
               transition={{ duration: 0.5 }}
               className="text-4xl md:text-5xl font-bold text-white mb-6"
             >
-              MEP Quantity Takeoffs
+              Finish Material Takeoffs
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
@@ -29,7 +29,7 @@ const MEPTakeoffsPage = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl text-gray-100 max-w-3xl mx-auto"
             >
-              Precise quantity takeoffs for mechanical, electrical, and plumbing systems
+              Precise quantity takeoffs for interior and exterior finishes
             </motion.p>
           </div>
         </div>
@@ -42,21 +42,21 @@ const MEPTakeoffsPage = () => {
             {/* Left Column */}
             <div>
               <h2 className="text-3xl font-bold text-brand-navy mb-6">
-                Comprehensive MEP Estimation
+                Comprehensive Finish Material Estimation
               </h2>
               <p className="text-lg text-gray-700 mb-6">
-                Our expert team provides detailed and accurate MEP takeoff services using advanced technology and industry best practices. We help contractors, engineers, and construction companies optimize their building services systems and costs.
+                Our expert team provides detailed and accurate finish material takeoff services using advanced technology and industry best practices. We help contractors, architects, and developers optimize their material quantities and costs.
               </p>
               <div className="space-y-4">
                 <h3 className="text-xl font-semibold text-brand-navy">Our Process:</h3>
                 <ul className="space-y-3">
                   {[
-                    'Drawing and specification review',
-                    'System type analysis',
-                    'Component identification',
-                    'Quantity calculations',
-                    'Material specification review',
-                    'Installation requirements'
+                    'Detailed finish schedule review',
+                    'Material specification analysis',
+                    'Surface area calculations',
+                    'Pattern matching considerations',
+                    'Waste factor assessment',
+                    'Installation method analysis'
                   ].map((item, index) => (
                     <li key={index} className="flex items-start space-x-3">
                       <CheckCircle className="h-6 w-6 text-brand-gold flex-shrink-0 mt-1" />
@@ -75,14 +75,14 @@ const MEPTakeoffsPage = () => {
                 </h3>
                 <ul className="space-y-3">
                   {[
-                    'HVAC system takeoffs',
-                    'Electrical system quantities',
-                    'Plumbing system calculations',
-                    'Ductwork measurements',
-                    'Piping system takeoffs',
-                    'Equipment scheduling',
-                    'Fixture counts',
-                    'Accessory quantification'
+                    'Wall finish takeoffs',
+                    'Ceiling material quantities',
+                    'Floor finish calculations',
+                    'Trim and molding measurements',
+                    'Paint area calculations',
+                    'Wallcovering quantities',
+                    'Cabinet and millwork',
+                    'Specialty finishes'
                   ].map((service, index) => (
                     <li key={index} className="flex items-center space-x-3">
                       <CheckCircle className="h-5 w-5 text-brand-gold" />
@@ -96,11 +96,11 @@ const MEPTakeoffsPage = () => {
                 <h3 className="text-xl font-semibold mb-4">Why Choose Us?</h3>
                 <ul className="space-y-4">
                   {[
-                    'Specialized MEP expertise',
+                    'Experienced finish specialists',
                     'Advanced measurement software',
-                    'Comprehensive system knowledge',
-                    'Detailed assembly analysis',
-                    'Value engineering options'
+                    'Detailed material schedules',
+                    'Accurate waste calculations',
+                    'Cost optimization expertise'
                   ].map((point, index) => (
                     <li key={index} className="flex items-start space-x-3">
                       <CheckCircle className="h-5 w-5 text-brand-gold flex-shrink-0 mt-1" />
@@ -121,7 +121,7 @@ const MEPTakeoffsPage = () => {
             Ready to Get Started?
           </h2>
           <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
-            Contact us today for accurate MEP takeoff services that help you plan and execute your projects efficiently.
+            Contact us today for accurate finish material takeoff services that help you plan and execute your construction projects efficiently.
           </p>
           <button className="bg-brand-gold hover:bg-brand-gold/90 text-white font-semibold py-3 px-8 rounded-lg transition duration-300">
             Request a Quote
@@ -132,4 +132,4 @@ const MEPTakeoffsPage = () => {
   );
 };
 
-export default MEPTakeoffsPage;
+export default FinishMaterialPage; 

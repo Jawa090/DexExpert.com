@@ -15,6 +15,7 @@ import BlogPage from "./pages/BlogPage";
 import BlogPostPage from "./pages/BlogPostPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import SamplesPage from "./pages/SamplesPage";
+import ServicesPage from "./pages/ServicesPage";
 
 // Service Pages - Design & Engineering
 import ArchitecturalDesignPage from "./pages/services/design/ArchitecturalDesignPage";
@@ -29,18 +30,34 @@ import FeasibilityPage from "./pages/services/design/FeasibilityPage";
 import SustainableDesignPage from "./pages/services/design/SustainableDesignPage";
 
 // Service Pages - Estimating
+// Civil Estimating
+import RoadConstructionPage from "./pages/services/estimating/RoadConstructionPage";
+import BridgeEstimatingPage from "./pages/services/estimating/BridgeEstimatingPage";
+import SiteworkTakeoffsPage from "./pages/services/estimating/SiteworkTakeoffsPage";
+import EarthworksEstimationPage from "./pages/services/estimating/EarthworksEstimationPage";
+
+// Structure/Shell Estimating
+import StructuralEstimatingPage from "./pages/services/estimating/StructuralEstimatingPage";
+import MetalWoodFramingPage from "./pages/services/estimating/MetalWoodFramingPage";
+import RebarEstimatingPage from "./pages/services/estimating/RebarEstimatingPage";
+import FoundationEstimatingPage from "./pages/services/estimating/FoundationEstimatingPage";
+import ShellConstructionPage from "./pages/services/estimating/ShellConstructionPage";
 import ConcreteTakeoffsPage from "./pages/services/estimating/ConcreteTakeoffsPage";
-import MEPTakeoffsPage from "./pages/services/estimating/MEPTakeoffsPage";
-import SteelTakeoffsPage from "./pages/services/estimating/SteelTakeoffsPage";
-import ConceptualEstimatingPage from "./pages/services/estimating/ConceptualEstimatingPage";
-import BidEstimatingPage from "./pages/services/estimating/BidEstimatingPage";
-import ChangeOrderPage from "./pages/services/estimating/ChangeOrderPage";
-import CivilEstimatingPage from "./pages/services/estimating/CivilEstimatingPage";
-import GreenEstimatingPage from "./pages/services/estimating/GreenEstimatingPage";
-import LaborEstimatingPage from "./pages/services/estimating/LaborEstimatingPage";
-import PlanswiftPage from "./pages/services/estimating/PlanswiftPage";
-import BluebeamPage from "./pages/services/estimating/BluebeamPage";
-import BOQPage from "./pages/services/estimating/BOQPage";
+
+// Architectural Estimating
+import ArchitecturalQSPage from "./pages/services/estimating/ArchitecturalQSPage";
+import FlooringTilingPage from "./pages/services/estimating/FlooringTilingPage";
+import FinishMaterialPage from "./pages/services/estimating/FinishMaterialPage";
+import DrywallEstimationPage from "./pages/services/estimating/DrywallEstimationPage";
+import RoofingCladdingPage from "./pages/services/estimating/RoofingCladdingPage";
+import DoorWindowPage from "./pages/services/estimating/DoorWindowPage";
+
+// MEP Estimating
+import MEPTakeoffsPage from './pages/services/estimating/MEPTakeoffsPage';
+import HVACEstimatingPage from './pages/services/estimating/HVACEstimatingPage';
+import ElectricalEstimatingPage from './pages/services/estimating/ElectricalEstimatingPage';
+import PlumbingEstimationPage from './pages/services/estimating/PlumbingEstimationPage';
+import MechanicalEstimatingPage from './pages/services/estimating/MechanicalEstimatingPage';
 
 // Service Pages - Construction Management
 import ConstructionPlanningPage from "./pages/services/construction/ConstructionPlanningPage";
@@ -54,6 +71,9 @@ import QualityAssurancePage from "./pages/services/construction/QualityAssurance
 import ContractAdminPage from "./pages/services/construction/ContractAdminPage";
 import CostControlPage from "./pages/services/construction/CostControlPage";
 import ClaimsManagementPage from "./pages/services/construction/ClaimsManagementPage";
+
+
+
 
 const queryClient = new QueryClient();
 
@@ -71,6 +91,7 @@ const App = () => (
             <Route path="blog/:id" element={<BlogPostPage />} />
             <Route path="portfolio" element={<PortfolioPage />} />
             <Route path="samples" element={<SamplesPage />} />
+            <Route path="services" element={<ServicesPage />} />
             
             {/* Design & Engineering Services Routes */}
             <Route path="services/design/architectural-design" element={<ArchitecturalDesignPage />} />
@@ -84,19 +105,32 @@ const App = () => (
             <Route path="services/design/feasibility" element={<FeasibilityPage />} />
             <Route path="services/design/sustainable-design" element={<SustainableDesignPage />} />
             
-            {/* Estimating Services Routes */}
+            {/* Estimating Services Routes - Civil */}
+            <Route path="services/estimating/road-construction" element={<RoadConstructionPage />} />
+            <Route path="services/estimating/bridge-estimating" element={<BridgeEstimatingPage />} />
+            <Route path="services/estimating/sitework-takeoffs" element={<SiteworkTakeoffsPage />} />
+            <Route path="services/estimating/earthworks-estimation" element={<EarthworksEstimationPage />} />
+            {/* Estimating Services Routes - Structure/Shell */}
+            <Route path="services/estimating/structural-estimating" element={<StructuralEstimatingPage />} />
+            <Route path="services/estimating/metal-wood-framing" element={<MetalWoodFramingPage />} />
+            <Route path="services/estimating/rebar-estimating" element={<RebarEstimatingPage />} />
+            <Route path="services/estimating/foundation-estimating" element={<FoundationEstimatingPage />} />
+            <Route path="services/estimating/shell-construction" element={<ShellConstructionPage />} />
             <Route path="services/estimating/concrete-takeoffs" element={<ConcreteTakeoffsPage />} />
+            {/* Estimating Services Routes - Architectural */}
+            <Route path="services/estimating/architectural-qs" element={<ArchitecturalQSPage />} />
+            <Route path="services/estimating/flooring-tiling" element={<FlooringTilingPage />} />
+            <Route path="services/estimating/finish-material-takeoffs" element={<FinishMaterialPage />} />
+            <Route path="services/estimating/drywall-estimation" element={<DrywallEstimationPage />} />
+            <Route path="services/estimating/roofing-cladding" element={<RoofingCladdingPage />} />
+            <Route path="services/estimating/door-window-takeoffs" element={<DoorWindowPage />} />
+            
+            {/* MEP Estimating Routes */}
             <Route path="services/estimating/mep-takeoffs" element={<MEPTakeoffsPage />} />
-            <Route path="services/estimating/steel-takeoffs" element={<SteelTakeoffsPage />} />
-            <Route path="services/estimating/conceptual-estimating" element={<ConceptualEstimatingPage />} />
-            <Route path="services/estimating/bid-estimating" element={<BidEstimatingPage />} />
-            <Route path="services/estimating/change-order" element={<ChangeOrderPage />} />
-            <Route path="services/estimating/civil-estimating" element={<CivilEstimatingPage />} />
-            <Route path="services/estimating/green-estimating" element={<GreenEstimatingPage />} />
-            <Route path="services/estimating/labor-equipment" element={<LaborEstimatingPage />} />
-            <Route path="services/estimating/planswift" element={<PlanswiftPage />} />
-            <Route path="services/estimating/bluebeam" element={<BluebeamPage />} />
-            <Route path="services/estimating/boq" element={<BOQPage />} />
+            <Route path="services/estimating/hvac-estimating" element={<HVACEstimatingPage />} />
+            <Route path="services/estimating/electrical-estimating" element={<ElectricalEstimatingPage />} />
+            <Route path="services/estimating/plumbing-estimation" element={<PlumbingEstimationPage />} />
+            <Route path="services/estimating/mechanical-estimating" element={<MechanicalEstimatingPage />} />
             
             {/* Construction Management Routes */}
             <Route path="services/construction/planning-scheduling" element={<ConstructionPlanningPage />} />

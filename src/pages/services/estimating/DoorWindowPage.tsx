@@ -3,12 +3,12 @@ import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { CheckCircle } from 'lucide-react';
 
-const MEPTakeoffsPage = () => {
+const DoorWindowPage = () => {
   return (
     <>
       <Helmet>
-        <title>MEP Quantity Takeoff Services | DexExperts</title>
-        <meta name="description" content="Professional MEP quantity takeoff services including mechanical, electrical, plumbing systems analysis and complete building services calculations." />
+        <title>Door & Window Quantity Takeoff Services | DexExperts</title>
+        <meta name="description" content="Professional door and window quantity takeoff services including detailed schedules, hardware analysis, and complete opening system calculations." />
       </Helmet>
 
       {/* Hero Section */}
@@ -21,7 +21,7 @@ const MEPTakeoffsPage = () => {
               transition={{ duration: 0.5 }}
               className="text-4xl md:text-5xl font-bold text-white mb-6"
             >
-              MEP Quantity Takeoffs
+              Door & Window Quantity Takeoffs
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
@@ -29,7 +29,7 @@ const MEPTakeoffsPage = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl text-gray-100 max-w-3xl mx-auto"
             >
-              Precise quantity takeoffs for mechanical, electrical, and plumbing systems
+              Precise quantity takeoffs for doors, windows, and related systems
             </motion.p>
           </div>
         </div>
@@ -42,20 +42,20 @@ const MEPTakeoffsPage = () => {
             {/* Left Column */}
             <div>
               <h2 className="text-3xl font-bold text-brand-navy mb-6">
-                Comprehensive MEP Estimation
+                Comprehensive Door & Window Estimation
               </h2>
               <p className="text-lg text-gray-700 mb-6">
-                Our expert team provides detailed and accurate MEP takeoff services using advanced technology and industry best practices. We help contractors, engineers, and construction companies optimize their building services systems and costs.
+                Our expert team provides detailed and accurate door and window takeoff services using advanced technology and industry best practices. We help contractors, manufacturers, and construction companies optimize their opening systems and costs.
               </p>
               <div className="space-y-4">
                 <h3 className="text-xl font-semibold text-brand-navy">Our Process:</h3>
                 <ul className="space-y-3">
                   {[
-                    'Drawing and specification review',
-                    'System type analysis',
-                    'Component identification',
-                    'Quantity calculations',
-                    'Material specification review',
+                    'Detailed schedule review',
+                    'Type and size analysis',
+                    'Hardware specification review',
+                    'Frame system evaluation',
+                    'Accessory quantification',
                     'Installation requirements'
                   ].map((item, index) => (
                     <li key={index} className="flex items-start space-x-3">
@@ -75,14 +75,14 @@ const MEPTakeoffsPage = () => {
                 </h3>
                 <ul className="space-y-3">
                   {[
-                    'HVAC system takeoffs',
-                    'Electrical system quantities',
-                    'Plumbing system calculations',
-                    'Ductwork measurements',
-                    'Piping system takeoffs',
-                    'Equipment scheduling',
-                    'Fixture counts',
-                    'Accessory quantification'
+                    'Door schedule takeoffs',
+                    'Window quantity analysis',
+                    'Hardware set calculations',
+                    'Frame system takeoffs',
+                    'Glass type quantities',
+                    'Specialty opening systems',
+                    'Rough opening calculations',
+                    'Installation accessory estimates'
                   ].map((service, index) => (
                     <li key={index} className="flex items-center space-x-3">
                       <CheckCircle className="h-5 w-5 text-brand-gold" />
@@ -96,9 +96,9 @@ const MEPTakeoffsPage = () => {
                 <h3 className="text-xl font-semibold mb-4">Why Choose Us?</h3>
                 <ul className="space-y-4">
                   {[
-                    'Specialized MEP expertise',
-                    'Advanced measurement software',
-                    'Comprehensive system knowledge',
+                    'Specialized opening expertise',
+                    'Advanced scheduling software',
+                    'Comprehensive hardware knowledge',
                     'Detailed assembly analysis',
                     'Value engineering options'
                   ].map((point, index) => (
@@ -121,7 +121,7 @@ const MEPTakeoffsPage = () => {
             Ready to Get Started?
           </h2>
           <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
-            Contact us today for accurate MEP takeoff services that help you plan and execute your projects efficiently.
+            Contact us today for accurate door and window takeoff services that help you plan and execute your projects efficiently.
           </p>
           <button className="bg-brand-gold hover:bg-brand-gold/90 text-white font-semibold py-3 px-8 rounded-lg transition duration-300">
             Request a Quote
@@ -132,4 +132,4 @@ const MEPTakeoffsPage = () => {
   );
 };
 
-export default MEPTakeoffsPage;
+export default DoorWindowPage; 

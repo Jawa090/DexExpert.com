@@ -12,14 +12,14 @@ const Footer = () => {
           <div>
             <h3 className="footer-title">About Us</h3>
             <div className="flex items-center mb-4">
-              <img 
+              {/* <img 
                 src="/lovable-uploads/3186012e-690d-472f-9aa8-9aee10aac758.png" 
                 alt="DEC Experts Logo" 
                 className="w-10 h-10 mr-2"
-              />
-              <div className="text-1xl font-orbitron font-semibold tracking-wide">
-              <span className="text-brand-gold">DEC Experts</span>
-  
+              /> */}
+   <div className="text-1xl font-orbitron font-semibold tracking-wide">
+  <span className="text-white">DEC</span>
+  <span className="text-brand-gold ml-1">Experts</span>
 </div>
 
 
@@ -64,21 +64,39 @@ const Footer = () => {
           </div>
           
           {/* Services */}
-          <div>
-            <h3 className="footer-title">Our Services</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/services/design/architectural-design" className="footer-link">Design & Engineering</Link>
-              </li>
-              <li>
-                <Link to="/services/estimating/concrete-takeoffs" className="footer-link">Estimating Services</Link>
-              </li>
-              <li>
-                <Link to="/services/construction/planning-scheduling" className="footer-link">Construction Management</Link>
-              </li>
-            </ul>
-          </div>
-          
+        <div>
+  <h3 className="footer-title">Our Services</h3>
+  <ul className="space-y-2">
+    <li>
+      <Link to="/services/design/architectural-design" className="footer-link">Design & Engineering</Link>
+    </li>
+    <li>
+      <Link to="/services/estimating/concrete-takeoffs" className="footer-link">Estimating Services</Link>
+    </li>
+    <li>
+      <Link to="/services/construction/planning-scheduling" className="footer-link">Construction Management</Link>
+    </li>
+
+    {/* Add more popular services */}
+    <li>
+      <Link to="/services/design/interior-design" className="footer-link">Interior Design</Link>
+    </li>
+    <li>
+      <Link to="/services/estimating/structural-estimating" className="footer-link">Structural Estimating</Link>
+    </li>
+    <li>
+      <Link to="/services/construction/safety-management" className="footer-link">Safety Management</Link>
+    </li>
+
+    {/* "View All Services" link */}
+    <li>
+      <Link to="/services" className="footer-link font-semibold text-primary hover:underline">
+        View All Services →
+      </Link>
+    </li>
+  </ul>
+</div>
+
           {/* Newsletter */}
           <div>
             <h3 className="footer-title">Stay Connected</h3>

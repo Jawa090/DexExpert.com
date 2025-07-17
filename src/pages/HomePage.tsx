@@ -170,132 +170,22 @@ const HomePage = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {/* Design & Engineering */}
-            <div className="group scroll-reveal">
-              <div className="relative bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 hover:scale-105 border-t-4 border-brand-navy overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-brand-gold/10 to-transparent rounded-full transform translate-x-8 -translate-y-8"></div>
-                
-                <div className="relative overflow-hidden rounded-2xl mb-8">
-                  <img 
-                    src="https://images.unsplash.com/photo-1487958449943-2429e8be8625" 
-                    alt="Design & Engineering" 
-                    className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-4 left-4">
-                    <div className="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
-                      <Building2 className="w-8 h-8 text-white" />
-                    </div>
-                  </div>
-                </div>
-                
-                <h3 className="text-2xl font-bold text-brand-navy mb-4 group-hover:text-brand-gold transition-colors duration-300">Design & Engineering</h3>
-                <p className="text-gray-600 mb-8 leading-relaxed">
-                  Comprehensive architectural and engineering solutions that combine creativity with technical precision using the latest BIM technology and sustainable design practices.
-                </p>
-                
-                <div className="space-y-4 mb-8">
-                  {['Architectural Design', 'Structural Engineering', 'MEP Design & BIM Services'].map((item, index) => (
-                    <div key={index} className="flex items-center group/item">
-                      <div className="w-6 h-6 bg-gradient-to-r from-brand-gold to-yellow-400 rounded-full mr-4 flex items-center justify-center group-hover/item:scale-125 transition-transform duration-300">
-                        <CheckCircle className="w-3 h-3 text-brand-navy" />
-                      </div>
-                      <span className="text-gray-700 group-hover/item:text-brand-navy transition-colors duration-300 font-medium">{item}</span>
-                    </div>
-                  ))}
-                </div>
-                
-                <Link to="/services/design/architectural-design" className="inline-flex items-center bg-gradient-to-r from-brand-navy to-blue-800 text-white font-bold px-6 py-3 rounded-xl hover:shadow-lg transition-all duration-300 group/link">
-                  Explore Design Services
-                  <ArrowRight size={16} className="ml-2 group-hover/link:translate-x-1 transition-transform duration-300" />
-                </Link>
-              </div>
-            </div>
-            
-            {/* Estimating Services */}
-            <div className="group scroll-reveal">
-              <div className="relative bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 hover:scale-105 border-t-4 border-brand-gold overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-brand-navy/10 to-transparent rounded-full transform translate-x-8 -translate-y-8"></div>
-                
-                <div className="relative overflow-hidden rounded-2xl mb-8">
-                  <img 
-                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f" 
-                    alt="Estimating Services" 
-                    className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-gold/80 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-4 left-4">
-                    <div className="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
-                      <Calculator className="w-8 h-8 text-white" />
-                    </div>
-                  </div>
-                </div>
-                
-                <h3 className="text-2xl font-bold text-brand-navy mb-4 group-hover:text-brand-gold transition-colors duration-300">Estimating Services</h3>
-                <p className="text-gray-600 mb-8 leading-relaxed">
-                  Precise cost estimation and quantity takeoff services to ensure project financial success with advanced software tools and detailed analysis.
-                </p>
-                
-                <div className="space-y-4 mb-8">
-                  {['Material Quantity Takeoffs', 'Bid & Conceptual Estimating', 'Specialized Cost Analysis'].map((item, index) => (
-                    <div key={index} className="flex items-center group/item">
-                      <div className="w-6 h-6 bg-gradient-to-r from-brand-navy to-blue-800 rounded-full mr-4 flex items-center justify-center group-hover/item:scale-125 transition-transform duration-300">
-                        <CheckCircle className="w-3 h-3 text-white" />
-                      </div>
-                      <span className="text-gray-700 group-hover:item:text-brand-navy transition-colors duration-300 font-medium">{item}</span>
-                    </div>
-                  ))}
-                </div>
-                
-                <Link to="/services/estimating/concrete-takeoffs" className="inline-flex items-center bg-gradient-to-r from-brand-gold to-yellow-400 text-brand-navy font-bold px-6 py-3 rounded-xl hover:shadow-lg transition-all duration-300 group/link">
-                  Explore Estimating
-                  <ArrowRight size={16} className="ml-2 group-hover/link:translate-x-1 transition-transform duration-300" />
-                </Link>
-              </div>
-            </div>
-            
-            {/* Construction Management */}
-            <div className="group scroll-reveal">
-              <div className="relative bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 hover:scale-105 border-t-4 border-green-600 overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-green-500/10 to-transparent rounded-full transform translate-x-8 -translate-y-8"></div>
-                
-                <div className="relative overflow-hidden rounded-2xl mb-8">
-                  <img 
-                    src="https://images.unsplash.com/photo-1487887235947-a955ef187fcc" 
-                    alt="Construction Management" 
-                    className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-green-600/80 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-4 left-4">
-                    <div className="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
-                      <Wrench className="w-8 h-8 text-white" />
-                    </div>
-                  </div>
-                </div>
-                
-                <h3 className="text-2xl font-bold text-brand-navy mb-4 group-hover:text-brand-gold transition-colors duration-300">Construction Management</h3>
-                <p className="text-gray-600 mb-8 leading-relaxed">
-                  Expert project execution and oversight to deliver projects on time and within budget using cutting-edge management tools and proven methodologies.
-                </p>
-                
-                <div className="space-y-4 mb-8">
-                  {['Planning & Scheduling', 'Site Supervision & Safety', 'Contract Administration'].map((item, index) => (
-                    <div key={index} className="flex items-center group/item">
-                      <div className="w-6 h-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full mr-4 flex items-center justify-center group-hover/item:scale-125 transition-transform duration-300">
-                        <CheckCircle className="w-3 h-3 text-white" />
-                      </div>
-                      <span className="text-gray-700 group-hover/item:text-brand-navy transition-colors duration-300 font-medium">{item}</span>
-                    </div>
-                  ))}
-                </div>
-                
-                <Link to="/services/construction/planning-scheduling" className="inline-flex items-center bg-gradient-to-r from-green-500 to-green-600 text-white font-bold px-6 py-3 rounded-xl hover:shadow-lg transition-all duration-300 group/link">
-                  Explore Management
-                  <ArrowRight size={16} className="ml-2 group-hover/link:translate-x-1 transition-transform duration-300" />
-                </Link>
-              </div>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              { title: 'Quantity Takeoff Services', desc: 'Accurate measurement and quantification for all construction elements.' },
+              { title: 'Cost Estimation Services', desc: 'Detailed and reliable cost projections for every project phase.' },
+              { title: 'Specialized Estimating', desc: 'Trade-specific and green building estimates for unique project needs.' },
+              { title: 'Software-Based Estimating', desc: 'Modern digital takeoff and estimating tools for efficiency.' },
+              { title: 'Documentation & Reporting', desc: 'Professional BOQs, cost reports, and bid documentation.' },
+              { title: 'Project Support Services', desc: 'Scope gap analysis, benchmarking, and peer review.' },
+              { title: 'Construction Management', desc: 'Expert project execution, supervision, and innovation.' },
+            ].map((cat, idx) => (
+              <Link to="/services" key={cat.title} className="group block bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 border-t-4 border-brand-navy/30 hover:border-brand-gold overflow-hidden">
+                <h3 className="text-2xl font-bold text-brand-navy mb-4 group-hover:text-brand-gold transition-colors duration-300">{cat.title}</h3>
+                <p className="text-gray-600 mb-4 leading-relaxed">{cat.desc}</p>
+                <span className="inline-flex items-center text-brand-gold font-semibold group-hover:underline">Explore <ArrowRight className="ml-2 w-4 h-4" /></span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
